@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+header h1 {
+  text-align: center;
+  color: #333;
+}
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+}
+.task-list li.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+  border-left-color: #28a745;
+}
+.btn {
+  padding: 6px 12px;
+  text-decoration: none;
+  color: white;
+  background: #007bff;
+  border-radius: 4px;
+}
+.btn.delete {
+  background: #dc3545;
+}
+.btn.submit {
+  margin-top: 15px;
+  background-color: #28a745;
+  border: none;
+  cursor: pointer;
+}
+.form-card input[type="text"],
+.form-card textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.check {
+  display: block;
+  margin: 10px 0;
+}

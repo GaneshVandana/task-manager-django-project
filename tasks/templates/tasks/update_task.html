@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2 style="margin-bottom: 20px;">Update Task</h2>
+
+  <form method="POST" style="max-width: 500px;">
+    {% csrf_token %}
+    
+    <div style="margin-bottom: 15px;">
+      <label for="id_title" style="font-weight: bold;">Title:</label><br>
+      {{ form.title }}
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label for="id_description" style="font-weight: bold;">Description:</label><br>
+      {{ form.description }}
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label for="id_completed" style="font-weight: bold;">Completed:</label>
+      {{ form.completed }}
+    </div>
+
+    <button type="submit" class="btn">Update</button>
+  </form>
+
+  <br>
+  <a href="{% url 'task_list' %}">← Back to Task List</a>
+{% endblock %}

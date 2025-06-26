@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="form-card">
+  <h2>Add Task</h2>
+  <form method="post">
+    {% csrf_token %}
+    <label>Title</label>
+    {{ form.title }}
+
+    <label>Description</label>
+    {{ form.description }}
+
+    <label class="check">{{ form.completed }} Completed</label>
+
+    <button type="submit" class="btn submit">Save</button>
+  </form>
+</div>
+{% endblock %}
