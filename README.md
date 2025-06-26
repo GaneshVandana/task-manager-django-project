@@ -20,7 +20,7 @@ A simple yet functional Task Manager built using Django. This web application al
 
 | Sign Up | Login | Task Manager |
 |--------|-----------|----------|
-| ![Sign Up](screenshots/signup.png) | ![Login](screenshots/login.png) | ![Task Manager](screenshots/Task Manager.png) |
+| ![Sign Up](screenshots/signup.png) | ![Login](screenshots/login.png) | ![Task Manager](screenshots/Task_Manager.png) |
 
 
 ---
